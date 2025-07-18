@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+}
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+.primary-color{
+    color: #3A3A3A;
+}
+.btn-primary{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    color: #FFFFFF;
+    font-weight: 800;
+    border: none;
+}
+/* navbar related styles */
+.header{
+    max-width: 1240px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-name{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.nav-links{
+    gap: 34px;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* banner related styles */
+.banner{
+    flex: 1;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-left-part{
+    max-width: 580px;
+}
+.banner-title{
+    font-weight: 800;
+    font-size: 3.12rem;
+    margin: 0px;
+}
+.banner-description{
+    font-weight: 600;
+}
+.banner-btn{
+    border-radius: 2.75rem;
+}
+.banner-right-part-image{
+    background-image: url("./images/background.svg");
+}
+
+/* logos related styles */
+.logos{
+    justify-content: space-between;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 80px;
+}
+
+/* card section related styles */
+.card-section{
+    max-width: 1040px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+ }
+.card-container{
+    padding: 17px;
+    max-width: 300px;
+    margin-right: 0px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.card-section-title{
+    font-weight: 600;
+    font-size: 1.75rem;
+    text-align: center;
+}
+.card-title{
+    margin: 16px 0px 14px 0px;
+    color: #18191F;
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+.item-price{
+    color: #000000;
+    font-size: 1.5rem;
+}
+.review{
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0px;
+}
+.review i{
+    color: #FB8200;
+}
+.review p{
+    margin-bottom: 0px;
+    margin-top: 5px;
+    color: #5E6366;
+    font-weight: 800;
+    font-size: 0.875rem;
+}
+.items-description{
+    margin: 0px;
+    color: #787885;
+    font-weight: 800;
+    font-size: 0.875rem;
+}
+.see-more{
+    justify-content: end;
+    align-items: center;
+    color: #E02C6D;
+}
+.see-more i{
+    padding-left: 5px;
+}
+/* feature products related styles */
+.feature-products{
+    max-width: 1110px;
+    margin: 0 auto;
+    gap: 70px;
+}
+.feature-title{
+    color: #0A0826;
+    font-weight: 800;
+    font-size: 2.375rem;
+}
+.feature-description{
+    color: #6C6C6C;
+    font-weight: 800;
+}
+/* footer related styles */
+footer{
+    text-align: center;
+    margin-top: 100px;
+    background-color: #13093b;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer-title{
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.footer-description{
+    color: #D9DBE1;
+    font-weight: 800;
+    font-size: 0.875rem;
+}
+.icon{
+    color: white;
+}
+.icon-section{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
