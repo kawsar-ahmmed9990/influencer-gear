@@ -18,9 +18,7 @@
     font-weight: 800;
     border: none;
 }
-.hide{
-    display: none;
-}
+
 /* navbar related styles */
 .header{
     max-width: 1240px;
@@ -53,10 +51,10 @@
     max-width: 1240px;
     max-height: auto;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .banner-left-part{
-    max-width: 580px;
+    max-width: 600px;
 }
 .banner-title{
     font-weight: 800;
