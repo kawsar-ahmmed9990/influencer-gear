@@ -18,6 +18,9 @@
     font-weight: 800;
     border: none;
 }
+.hide{
+    display: none;
+}
 /* navbar related styles */
 .header{
     max-width: 1240px;
@@ -45,11 +48,12 @@
 
 /* banner related styles */
 .banner{
-    flex: 1;
     margin-top: 80px;
     margin-bottom: 80px;
+    max-width: 1240px;
+    max-height: auto;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .banner-left-part{
     max-width: 580px;
@@ -65,17 +69,27 @@
 .banner-btn{
     border-radius: 2.75rem;
 }
+.banner img{
+    max-width: 700px;
+    width: 100%;
+}
 .banner-right-part-image{
     background-image: url("./images/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 500px;
+    width: 100%;
 }
 
 /* logos related styles */
 .logos{
-    justify-content: space-between;
-    max-width: 1110px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
     margin-bottom: 80px;
+    padding-right: 0px;
 }
 
 /* card section related styles */
@@ -96,6 +110,9 @@
     background-color: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.card-image{
+    width: 100%;
 }
 .card-section-title{
     font-weight: 600;
@@ -156,6 +173,9 @@
     color: #6C6C6C;
     font-weight: 800;
 }
+.feature-image img{
+    width: 100%;
+}
 /* footer related styles */
 footer{
     text-align: center;
@@ -181,4 +201,43 @@ footer{
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+/* media query */
+@media screen and (max-width: 576px) {
+    .navbar,
+    .nav-links,
+    .banner,
+    .feature-products
+    {
+        flex-direction: column;
+    }
+    .brand-name,
+    .nav-links{
+        text-align: center;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-left-part{
+        text-align: center;
+    }
+    .logos{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .card-section-title{
+        text-align: center;
+    }
+    .cards-container{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .see-more{
+        justify-content: center;
+    }
+    .feature-products{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
 }
